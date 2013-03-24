@@ -1,4 +1,5 @@
 <h2><%= @image.title %></h2>
 <%= image_tag @image.url %>
 <%= link_to "Edit", edit_image_path(@image) %>
+<%= link_to "Delete", @image, :method => :delete, :confirm => "You're about to delete this image. Are you sure?" %>
 <h3> <%= @image.author %> </h3>
