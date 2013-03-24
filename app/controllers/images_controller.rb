@@ -18,4 +18,17 @@ class ImagesController < ApplicationController
    def show
       @image = Image.find(params[:id])
    end
+
+   def edit
+      @image = Image.find(params[:id])
+   end
+
+   def update
+      @image = Image.find(params[:id])
+      if @image.update_attributes(params[:image])
+         redirect_to @image
+      else
+         redirect_to pictures_path
+      end
+   end
 end
