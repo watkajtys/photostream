@@ -1,10 +1,15 @@
 <%= form_for @image do|f| %>
+<div class='error'>
+   <%= flash[:error] %>
+</div>
 <p>
    <%= f.label :title, "Enter Title" %>
+   <%= @image.errors[:title].join(',') %>
    <%= f.text_field :title %>
 </p>
 <p>
    <%= f.label :url, "Enter Image URL from web" %>
+   <%= @image.errors[:url].join(',') %>
    <%= f.text_field :url %>
 </p>
 <p>

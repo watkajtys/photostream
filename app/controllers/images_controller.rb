@@ -12,6 +12,9 @@ class ImagesController < ApplicationController
       @image = Image.new(params[:image])
       if @image.save
          redirect_to images_path
+      else 
+         flash[:error] = "Could not create image!"
+         render :new
       end 
    end
 
@@ -28,7 +31,8 @@ class ImagesController < ApplicationController
       if @image.update_attributes(params[:image])
          redirect_to @image
       else
-         redirect_to pictures_path
+         flash[:error] = "Could not update image."
+         render :edit
       end
    end
 
