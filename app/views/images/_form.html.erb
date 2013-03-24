@@ -1,0 +1,17 @@
+<%= form_for @image do|f| %>
+<p>
+   <%= f.label :title, "Enter Title" %>
+   <%= f.text_field :title %>
+</p>
+<p>
+   <%= f.label :url, "Enter Image URL from web" %>
+   <%= f.text_field :url %>
+</p>
+<p>
+   <%= f.label :author, "Enter Original Author" %>
+   <%= f.text_field :author  %>
+</p>
+<p>
+   <%= f.submit "Save" %>
+</p>
+<% end %>

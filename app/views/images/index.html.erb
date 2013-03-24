@@ -1,1 +1,10 @@
 <h1>PhotoStream</h1>
+
+<%- @images.each do |image| %>
+<div class="image">
+   <h2><%= image.title %></h2>
+   <%= link_to image_path(image) do %>
+      <%= image_tag image.url %>
+   <% end %>
+</div>
+<% end %>
