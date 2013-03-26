@@ -1,11 +1,7 @@
 class Image < ActiveRecord::Base
-   attr_accessible :title, :url, :author
+   attr_accessible :title, :url, :author, :image, :remote_image_url
 
    validates :title, :presence => true
 
-   validates :url, {
-      :format => {
-        :with => /^https?:/, :message => "Please Enter a Valid URL"
-      }
-   }
+   mount_uploader :image, ImageUploader
 end

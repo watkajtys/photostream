@@ -8,9 +8,9 @@
    <%= f.text_field :title %>
 </p>
 <p>
-   <%= f.label :url, "Enter Image URL from web" %>
-   <%= @image.errors[:url].join(',') %>
-   <%= f.text_field :url %>
+   <%= f.label :remote_image_url, "Enter Image URL from web" %>
+   <%= @image.errors[:remote_image_url].join(',') %>
+   <%= f.text_field :remote_image_url %>
 </p>
 <p>
    <%= f.label :author, "Enter Original Author" %>

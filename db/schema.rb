@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130324215857) do
+ActiveRecord::Schema.define(:version => 20130326002737) do
 
   create_table "images", :force => true do |t|
     t.string "title"
-    t.string "url"
     t.string "author"
+    t.string "image"
   end
 
 end
