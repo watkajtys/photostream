@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
-gem 'font-awesome-sass-rails'
+gem "font-awesome-rails"
 
 gem 'carrierwave'
 gem 'mini_magick'
