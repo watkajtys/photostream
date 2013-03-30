@@ -1,6 +1,4 @@
 <div class="row">
-<h1>PhotoStream</h1>
-
 <%- @images.each do |image| %>
 <div class="image half">
    <h2><%= image.title %></h2>
@@ -10,3 +8,4 @@
 </div>
 <% end %>
 </div>
+<%= paginate @images %>

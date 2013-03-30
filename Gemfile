@@ -11,6 +11,7 @@ gem "font-awesome-rails"
 
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'kaminari'
 
 
 # Gems used only for assets and not required

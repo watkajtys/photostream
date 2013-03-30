@@ -27,5 +27,12 @@ ul {
 
 li {
    display: inline;
-   font-size: 70px;
+}
+
+#container {
+   width: 100%;
+}
+
+img {
+   width: 100%;
 }
